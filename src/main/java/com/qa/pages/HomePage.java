@@ -29,6 +29,7 @@ public class HomePage extends TestBase {
 		searchField.sendKeys(searchValue, Keys.RETURN);
 	}
 	
+	// getting the result of search and clicking on the random search element.
 	public AddToCartPage clickonProduct() {
 		List<WebElement> itemList = items;
 		int count = itemList.size();

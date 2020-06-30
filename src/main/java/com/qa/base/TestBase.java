@@ -24,6 +24,7 @@ public class TestBase {
 	public static WebEventListener eventListener;
 	
 	public TestBase(){
+		// Initializing properties variable prop for reading the values from config.properties file
 		try {
 			prop = new Properties();
 			FileInputStream ip = new FileInputStream(System.getProperty("user.dir")+ "/src/main/java/com"

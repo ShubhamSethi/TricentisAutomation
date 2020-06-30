@@ -32,6 +32,7 @@ public class TestUtil extends TestBase {
 //		driver.switchTo().frame("mainpanel");
 //	}
 
+	// getting the data from the excel sheet
 	public static Object[][] getTestData(String sheetName) {
 		FileInputStream file = null;
 		try {
@@ -58,6 +59,8 @@ public class TestUtil extends TestBase {
 		return data;
 	}
 
+	
+	// Take screenshot 
 	public static void takeScreenshotAtEndOfTest() throws IOException {
 		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		String currentDir = System.getProperty("user.dir");

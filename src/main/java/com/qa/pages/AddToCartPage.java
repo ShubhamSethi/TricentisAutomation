@@ -24,10 +24,6 @@ public class AddToCartPage extends TestBase {
 	@FindBy(xpath = "//form[@id='product-details-form']//div[@class='product-price']/span")
 	WebElement productPrice;
 
-	// @FindBy(xpath =
-	// "//form[@id='product-details-form']//label[contains(text(),'HDD')]//parent::dt//following-sibling::dd/ul/li[1]/label")
-	// WebElement selectHDD;
-
 	@FindBy(xpath = "//form[@id='product-details-form']//dd")
 	List<WebElement> compConfigList;
 
@@ -40,6 +36,8 @@ public class AddToCartPage extends TestBase {
 	}
 
 	public ShoppingCartPage AddItemToCart() {
+		
+		// Selecting the configuration for computer
 		for (int i = 1; i < compConfigList.size(); i++) {
 			if(driver.findElements(By.xpath("//form[@id='product-details-form']//dd["+i+"]//input[1]")).size() > 0) {
 				clickOnElement(compConfig);
