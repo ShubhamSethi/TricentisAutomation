@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Tricentis Test Automation Test Suite" duration-ms="20557" started-at="2020-06-29T13:05:04Z" finished-at="2020-06-29T13:05:25Z">
+  <suite name="Tricentis Test Automation Test Suite" duration-ms="42776" started-at="2020-06-30T05:22:39Z" finished-at="2020-06-30T05:23:22Z">
     <groups>
     </groups>
-    <test name="Tricentis Test Cases" duration-ms="20557" started-at="2020-06-29T13:05:04Z" finished-at="2020-06-29T13:05:25Z">
+    <test name="Tricentis Test Cases" duration-ms="42776" started-at="2020-06-30T05:22:39Z" finished-at="2020-06-30T05:23:22Z">
       <class name="com.qa.testcases.ShoppingCartPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.testcases.ShoppingCartPageTest@511baa65]" name="setUp" is-config="true" duration-ms="19635" started-at="2020-06-29T18:35:05Z" finished-at="2020-06-29T18:35:25Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.testcases.ShoppingCartPageTest@511baa65]" name="setUp" is-config="true" duration-ms="41179" started-at="2020-06-30T10:52:41Z" finished-at="2020-06-30T10:53:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="VerifyTitleAndPrice(java.lang.String)[pri:0, instance:com.qa.testcases.ShoppingCartPageTest@511baa65]" name="VerifyTitleAndPrice" duration-ms="90" started-at="2020-06-29T18:35:25Z" data-provider="search" finished-at="2020-06-29T18:35:25Z">
+        <test-method status="PASS" signature="VerifyTitleAndPrice(java.lang.String)[pri:0, instance:com.qa.testcases.ShoppingCartPageTest@511baa65]" name="VerifyTitleAndPrice" duration-ms="137" started-at="2020-06-30T10:53:22Z" data-provider="search" finished-at="2020-06-30T10:53:22Z">
           <params>
             <param index="0">
               <value>
