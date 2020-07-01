@@ -2,26 +2,23 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Tricentis Test Automation Test Suite" duration-ms="42776" started-at="2020-06-30T05:22:39Z" finished-at="2020-06-30T05:23:22Z">
+  <suite name="Tricentis Test Automation Test Suite" duration-ms="37381" started-at="2020-07-01T04:12:11Z" finished-at="2020-07-01T04:12:48Z">
     <groups>
     </groups>
-    <test name="Tricentis Test Cases" duration-ms="42776" started-at="2020-06-30T05:22:39Z" finished-at="2020-06-30T05:23:22Z">
+    <test name="Tricentis Test Cases" duration-ms="37381" started-at="2020-07-01T04:12:11Z" finished-at="2020-07-01T04:12:48Z">
       <class name="com.qa.testcases.ShoppingCartPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.testcases.ShoppingCartPageTest@511baa65]" name="setUp" is-config="true" duration-ms="41179" started-at="2020-06-30T10:52:41Z" finished-at="2020-06-30T10:53:22Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.testcases.ShoppingCartPageTest@511baa65]" name="setUp" is-config="true" duration-ms="36097" started-at="2020-07-01T09:42:11Z" finished-at="2020-07-01T09:42:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="VerifyTitleAndPrice(java.lang.String)[pri:0, instance:com.qa.testcases.ShoppingCartPageTest@511baa65]" name="VerifyTitleAndPrice" duration-ms="137" started-at="2020-06-30T10:53:22Z" data-provider="search" finished-at="2020-06-30T10:53:22Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Computer]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="PASS" signature="VerifyTitleAndPrice()[pri:0, instance:com.qa.testcases.ShoppingCartPageTest@511baa65]" name="VerifyTitleAndPrice" duration-ms="139" started-at="2020-07-01T09:42:47Z" finished-at="2020-07-01T09:42:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyTitleAndPrice -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.testcases.ShoppingCartPageTest@511baa65]" name="tearDown" is-config="true" duration-ms="1130" started-at="2020-07-01T09:42:47Z" finished-at="2020-07-01T09:42:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
       </class> <!-- com.qa.testcases.ShoppingCartPageTest -->
     </test> <!-- Tricentis Test Cases -->
   </suite> <!-- Tricentis Test Automation Test Suite -->

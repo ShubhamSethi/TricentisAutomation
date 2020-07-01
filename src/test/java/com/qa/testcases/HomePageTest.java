@@ -32,6 +32,7 @@ public class HomePageTest extends TestBase{
 		homePage = loginPage.login(prop.getProperty("useraname"),prop.getProperty("password"));
 	}
 	
+	// Getting the search data from excel and serach the product and click on the random product
 	@Test(priority = 1, dataProvider="search")
 	public void AddProductToCart(String SearchText){
 		homePage.SearchItem(SearchText);

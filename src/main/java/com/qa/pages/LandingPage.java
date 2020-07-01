@@ -15,11 +15,13 @@ public class LandingPage extends TestBase{
 		PageFactory.initElements(driver, this);
 	}
 	
+	// clicks on login link to go to login page
 	public LoginPage clickOnLogin() {
 		clickOnElement(loginlink);
 		return new LoginPage();
 	}
 	
+	// gets the title of the landing page after the url is entered
 	public String getTitle(){
 		return driver.getTitle();
 	}

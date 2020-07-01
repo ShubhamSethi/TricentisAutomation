@@ -29,7 +29,7 @@ public class HomePage extends TestBase {
 		searchField.sendKeys(searchValue, Keys.RETURN);
 	}
 	
-	// getting the result of search and clicking on the random search element.
+	// getting the result of search and clicking on the random search element to go to add to cart page.
 	public AddToCartPage clickonProduct() {
 		List<WebElement> itemList = items;
 		int count = itemList.size();
@@ -40,6 +40,7 @@ public class HomePage extends TestBase {
 		return new AddToCartPage();
 	}
 	
+	// checks the Home page is opened
 	public boolean isPageOpened(){
 		return userLabel.isDisplayed();
 	}

@@ -35,6 +35,7 @@ public class AddToCartPage extends TestBase {
 		PageFactory.initElements(driver, this);
 	}
 
+	// Add item to cart and go to shopping page
 	public ShoppingCartPage AddItemToCart() {
 		
 		// Selecting the configuration for computer
@@ -46,19 +47,24 @@ public class AddToCartPage extends TestBase {
 				select.selectByIndex(0);
 			}
 		}
+		// clicks on add to cart button
 		clickOnElement(addToCartBtn);
+		// clicks on shopping cart link to go to shopping page
 		clickOnElement(shoppingCartBtn);
 		return new ShoppingCartPage();
 	}
 
+	// gets the product title on add to cart page
 	public String GetProductTitle() {
 		return getValue(productTitle);
 	}
 
+	// gets the product price on add to cart page
 	public String GetProductPrice() {
 		return getValue(productPrice);
 	}
 
+	// checks the add to cart page is opened
 	public boolean isPageOpened() {
 		return addToCartBtn.isDisplayed();
 	}

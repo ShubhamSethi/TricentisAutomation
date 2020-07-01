@@ -34,6 +34,7 @@ public class AddToCartPageTest extends TestBase{
 		addToCartPage = homePage.clickonProduct();
 	}
 	
+	// Add the product on cart by clicking on add to cart button for the product
 	@Test(priority = 1)
 	public void AddProductToCart(){
 		shopCartPage = addToCartPage.AddItemToCart();

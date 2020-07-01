@@ -22,7 +22,7 @@ public class LoginPage extends TestBase{
 	}
 	
 	
-	//Perform Login
+	//Perform Login by entering the user name and password and clicking on login button
 	public HomePage login(String email, String pass){
 		EnterValue(username, email);
 		EnterValue(password,pass);
@@ -31,6 +31,7 @@ public class LoginPage extends TestBase{
 		return new HomePage();
 	}
 	
+	// checks the login page is opened.
 	public boolean isPageOpened(){
 		return loginBtn.isDisplayed();
 	}

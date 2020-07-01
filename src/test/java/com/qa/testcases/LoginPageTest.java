@@ -27,6 +27,7 @@ public class LoginPageTest extends TestBase{
 		loginPage = landingPage.clickOnLogin();
 	}
 	
+	// enter user name and password and click on login button
 	@Test()
 	public void loginTest(){
 		homePage = loginPage.login(prop.getProperty("useraname"),prop.getProperty("password"));

@@ -21,14 +21,17 @@ public class ShoppingCartPage extends TestBase{
 		PageFactory.initElements(driver, this);
 	}
 	
+	// gets the product title on shopping cart page
 	public String GetProductTitle(){
 		return getValue(productTitle);
 	}
 	
+	// gets the product price on shopping cart page
 	public String GetProductPrice(){
 		return getValue(productTotalPrice);
 	} 
 	
+	// checks the shopping cart page is opened
 	public boolean isPageOpened(){
 		return checkoutBtn.isDisplayed();
 	}

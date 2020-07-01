@@ -40,8 +40,9 @@ public class ShoppingCartPageTest extends TestBase{
 		shopCartPage = addToCartPage.AddItemToCart();
 	}
 	
-	@Test(dataProvider="search", dataProviderClass=HomePageTest.class)
-	public void VerifyTitleAndPrice(String a){
+	// checks the title and price are matched on the add to cart page and shopping cart page
+	@Test
+	public void VerifyTitleAndPrice(){
 		Assert.assertEquals(shopCartPage.GetProductTitle(),name);
 		Assert.assertEquals(shopCartPage.GetProductPrice(),price);
 	}

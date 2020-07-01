@@ -24,6 +24,7 @@ public class LandingPageTest extends TestBase{
 		landingPage = new LandingPage();	
 	}
 	
+	// Clicks on the login link on the landing page
 	@Test
 	public void loginTest(){
 		loginPage = landingPage.clickOnLogin();
