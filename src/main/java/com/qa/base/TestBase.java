@@ -42,20 +42,25 @@ public class TestBase {
 	public static void initialization(){
 		String browserName = prop.getProperty("browser");
 		
-		if(browserName.equals("chrome")){
+		switch(browserName) {
+		case "chrome": 
 			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+ "\\drivers\\chromedriver.exe");	
 			driver = new ChromeDriver(); 
-		}
-		else if(browserName.equals("FF")){
+			break;
+		case "FF": 
 			System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")+ "\\drivers\\geckodriver.exe");	
 			driver = new FirefoxDriver(); 
+			break;
+		default: 
+			System.out.println("Please provide correct browser name.");
 		}
 		
-		
+		// event firing web driver is used to have a log for every event being called
 		e_driver = new EventFiringWebDriver(driver);
 		// Now create object of EventListerHandler to register it with EventFiringWebDriver
 		eventListener = new WebEventListener();
 		e_driver.register(eventListener);
+		// assign the event firing web driver to our driver so that it can listen to every event being fired on this driver
 		driver = e_driver;
 		
 		driver.manage().window().maximize();

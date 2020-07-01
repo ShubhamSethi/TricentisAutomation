@@ -1,5 +1,6 @@
 package com.qa.testcases;
 
+import org.apache.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -15,7 +16,7 @@ public class LoginPageTest extends TestBase{
 	LandingPage landingPage;
 	LoginPage loginPage;
 	HomePage homePage;
-	
+	Logger log  = Logger.getLogger(LoginPageTest.class);
 	public LoginPageTest() {
 		super();
 	}
@@ -31,6 +32,7 @@ public class LoginPageTest extends TestBase{
 	@Test()
 	public void loginTest(){
 		homePage = loginPage.login(prop.getProperty("useraname"),prop.getProperty("password"));
+		log.info("logged in by entering username and password");
 		Assert.assertTrue(homePage.isPageOpened());
 	}
 	
