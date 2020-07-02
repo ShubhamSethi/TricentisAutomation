@@ -28,6 +28,9 @@ public class TestUtil extends TestBase {
 	static Sheet sheet;
 	static JavascriptExecutor js;
 
+	public void switchToFrame() {
+		driver.switchTo().frame("mainpanel");
+	}
 
 	// getting the data from the excel sheet
 	public static Object[][] getTestData(String sheetName) {

@@ -11,4 +11,16 @@
       <class name="com.qa.testcases.ShoppingCartPageTest"/>
     </classes>
   </test> <!-- Tricentis Test Cases -->
+  <test name="Tricentis Test Cases(failed)">
+    <parameter name="searchParam" value="Computer"/>
+    <classes>
+      <class name="com.qa.testcases.ShoppingCartPageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="VerifyTitleAndPrice"/>
+        </methods>
+      </class> <!-- com.qa.testcases.ShoppingCartPageTest -->
+    </classes>
+  </test> <!-- Tricentis Test Cases(failed) -->
 </suite> <!-- Failed suite [Tricentis Test Automation Test Suite] -->

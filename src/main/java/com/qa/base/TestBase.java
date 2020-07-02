@@ -6,8 +6,8 @@ import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
@@ -15,14 +15,14 @@ import org.openqa.selenium.support.events.EventFiringWebDriver;
 import com.qa.util.TestUtil;
 import com.qa.util.WebEventListener;
 
-public class TestBase {
+public class TestBase extends SeleniumActions{
 
 	
 	public static WebDriver driver;
 	public static Properties prop;
 	public  static EventFiringWebDriver e_driver;
 	public static WebEventListener eventListener;
-	
+	public static JavascriptExecutor js = (JavascriptExecutor) driver;
 	public TestBase(){
 		// Initializing properties variable prop for reading the values from config.properties file
 		try {
@@ -73,19 +73,19 @@ public class TestBase {
 	}
 	
 	
-	// click on the given web element.
-	public static void clickOnElement(WebElement element){
-		element.click();
-	}
-	
-	// Get the text available for the web element
-	public static String getValue(WebElement element){
-		return element.getText().trim();
-	}
-	
-	// Enter value in text Field
-	public void EnterValue(WebElement element, String Value){
-		element.sendKeys(Value);
-	}
+//	// click on the given web element.
+//	public static void clickOnElement(WebElement element){
+//		element.click();
+//	}
+//	
+//	// Get the text available for the web element
+//	public static String getValue(WebElement element){
+//		return element.getText().trim();
+//	}
+//	
+//	// Enter value in text Field
+//	public void EnterValue(WebElement element, String Value){
+//		element.sendKeys(Value);
+//	}
 	
 }
