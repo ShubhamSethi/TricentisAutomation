@@ -15,7 +15,7 @@ import org.openqa.selenium.support.events.EventFiringWebDriver;
 import com.qa.util.TestUtil;
 import com.qa.util.WebEventListener;
 
-public class TestBase extends SeleniumActions{
+public abstract class TestBase extends SeleniumActions{
 
 	
 	public static WebDriver driver;

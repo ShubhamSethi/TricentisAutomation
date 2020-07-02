@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Tricentis Test Automation Test Suite" duration-ms="31075" started-at="2020-07-02T05:03:21Z" finished-at="2020-07-02T05:03:52Z">
+  <suite name="Tricentis Test Automation Test Suite" duration-ms="25593" started-at="2020-07-02T05:09:24Z" finished-at="2020-07-02T05:09:49Z">
     <groups>
     </groups>
-    <test name="Tricentis Test Cases" duration-ms="31075" started-at="2020-07-02T05:03:21Z" finished-at="2020-07-02T05:03:52Z">
+    <test name="Tricentis Test Cases" duration-ms="25593" started-at="2020-07-02T05:09:24Z" finished-at="2020-07-02T05:09:49Z">
       <class name="com.qa.testcases.ShoppingCartPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.testcases.ShoppingCartPageTest@5056dfcb]" name="setUp" is-config="true" duration-ms="29728" started-at="2020-07-02T10:33:21Z" finished-at="2020-07-02T10:33:51Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.testcases.ShoppingCartPageTest@5056dfcb]" name="setUp" is-config="true" duration-ms="24391" started-at="2020-07-02T10:39:24Z" finished-at="2020-07-02T10:39:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="VerifyTitleAndPrice()[pri:0, instance:com.qa.testcases.ShoppingCartPageTest@5056dfcb]" name="VerifyTitleAndPrice" duration-ms="51" started-at="2020-07-02T10:33:51Z" finished-at="2020-07-02T10:33:51Z">
+        <test-method status="FAIL" signature="VerifyTitleAndPrice()[pri:0, instance:com.qa.testcases.ShoppingCartPageTest@5056dfcb]" name="VerifyTitleAndPrice" duration-ms="65" started-at="2020-07-02T10:39:48Z" finished-at="2020-07-02T10:39:48Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [Build your own cheap computer] but found [Build your own expensive computer]]]>
@@ -55,7 +55,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyTitleAndPrice -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.testcases.ShoppingCartPageTest@5056dfcb]" name="tearDown" is-config="true" duration-ms="1282" started-at="2020-07-02T10:33:51Z" finished-at="2020-07-02T10:33:52Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.testcases.ShoppingCartPageTest@5056dfcb]" name="tearDown" is-config="true" duration-ms="1120" started-at="2020-07-02T10:39:48Z" finished-at="2020-07-02T10:39:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
