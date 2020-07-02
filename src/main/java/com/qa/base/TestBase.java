@@ -22,7 +22,6 @@ public abstract class TestBase extends SeleniumActions{
 	public static Properties prop;
 	public  static EventFiringWebDriver e_driver;
 	public static WebEventListener eventListener;
-	public static JavascriptExecutor js = (JavascriptExecutor) driver;
 	public TestBase(){
 		// Initializing properties variable prop for reading the values from config.properties file
 		try {
@@ -71,21 +70,5 @@ public abstract class TestBase extends SeleniumActions{
 		driver.get(prop.getProperty("url"));
 		
 	}
-	
-	
-//	// click on the given web element.
-//	public static void clickOnElement(WebElement element){
-//		element.click();
-//	}
-//	
-//	// Get the text available for the web element
-//	public static String getValue(WebElement element){
-//		return element.getText().trim();
-//	}
-//	
-//	// Enter value in text Field
-//	public void EnterValue(WebElement element, String Value){
-//		element.sendKeys(Value);
-//	}
 	
 }
